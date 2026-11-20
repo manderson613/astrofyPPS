@@ -41,3 +41,5 @@
 /go/points/x-ray https://www.etsy.com/listing/4609916177 302
 /song-store https://paleopoet.bandcamp.com 302
 /point-store https://www.etsy.com/shop/PaleoPoetStudios 302
+/products/* https://paleopoet.com/ 302
+/collections/* https://paleopoet.com/ 302
