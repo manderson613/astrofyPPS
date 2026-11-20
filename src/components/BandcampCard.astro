@@ -1,5 +1,5 @@
 ---
-const { title, trackId, desc, url, badge, tags, target = "_blank" } = Astro.props;
+const { title, trackId, desc, url, badge, tags, target = "_blank", etsyUrl } = Astro.props;
 import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
 ---
@@ -38,4 +38,11 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
       </div>
     </div>
   </a>
+  {etsyUrl && (
+      <div class="px-8 pt-6 pb-6 flex justify-end">
+        <a href={etsyUrl} target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-warning font-semibold">
+          Inspired by the hand-knapped blade — Collect the physical artifact on Etsy →
+        </a>
+      </div>
+    )}
 </div>
